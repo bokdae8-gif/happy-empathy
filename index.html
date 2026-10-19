@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사단법인 행복한공감 | 부설 서울산 성·가정상담소</title>
+    <meta name="description" content="사단법인 행복한공감 및 부설 서울산 성·가정상담소 공식 홈페이지입니다. 가정폭력, 성폭력, 부부 및 개인상담, 심리치료, 선도사업을 함께합니다.">
+    <meta name="keywords" content="사단법인 행복한공감, 서울산성가정상담소, 울산상담소, 울주군상담소, 성폭력상담소, 가정폭력상담소, 사랑의교실, 심리치료">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Pretendard alternative Noto Sans KR & Serif font for Bible verse -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-contacts">
+                <span><i class="fa-solid fa-phone"></i> 대표전화 <strong>052-248-1366</strong></span>
+                <span class="divider">|</span>
+                <span><i class="fa-solid fa-mobile-screen"></i> <strong>010-4012-1366</strong></span>
+                <span class="divider hide-mobile">|</span>
+                <span class="hide-mobile"><i class="fa-regular fa-envelope"></i> 7001366@naver.com</span>
+            </div>
+            <div class="top-links">
+                <span class="bank-tag"><i class="fa-solid fa-heart"></i> 후원: 농협 301-0383-7865-51</span>
+                <button class="btn-copy-account" onclick="copyAccount('301-0383-7865-51')"><i class="fa-regular fa-copy"></i> 복사</button>
+                <a href="https://blog.naver.com/happy_empathy" target="_blank" class="top-blog-btn"><i class="fa-solid fa-square-arrow-up-right"></i> 공식블로그</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <!-- LOGO AREA -->
+            <div class="logo">
+                <a href="#hero" class="logo-link">
+                    <div class="logo-imgs">
+                        <img src="images/logo1.png" alt="사단법인 행복한공감 로고" class="logo-img logo-sun">
+                        <img src="images/logo2.png" alt="서울산 성·가정상담소 나비 로고" class="logo-img logo-butterfly">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">사단법인 행복한공감</span>
+                        <span class="logo-subtitle">부설 서울산 성·가정상담소</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- DESKTOP NAV -->
+            <nav class="nav" id="mainNav">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#about" class="nav-item">기관소개 <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#about-greeting" onclick="switchAboutTab('greeting')">인사말</a></li>
+                            <li><a href="#about-mission" onclick="switchAboutTab('mission')">미션 및 비전</a></li>
+                            <li><a href="#about-history" onclick="switchAboutTab('history')">주요연혁</a></li>
+                            <li><a href="#about-org" onclick="switchAboutTab('org')">조직도</a></li>
+                            <li><a href="#about-staff" onclick="switchAboutTab('staff')">임직원 소개</a></li>
+                            <li><a href="#about-location" onclick="switchAboutTab('location')">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#business" class="nav-item">사업안내 <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#business-counseling">상담지원 사업</a></li>
+                            <li><a href="#business-leading">선도사업(사랑의 교실)</a></li>
+                            <li><a href="#business-education">특별교육·심리치료</a></li>
+                            <li><a href="#business-fieldwork">사회복지 현장실습</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#news" class="nav-item">소식알림 <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#news" onclick="switchBoardTab('notice')">공지사항</a></li>
+                            <li><a href="#news" onclick="switchBoardTab('press')">보도자료</a></li>
+                            <li><a href="https://blog.naver.com/happy_empathy" target="_blank">활동 갤러리 <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#support" class="nav-item highlight-nav">후원 및 신청 <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#support">후원안내</a></li>
+                            <li><a href="#support-forms" onclick="openModal('counselModal')">상담신청</a></li>
+                            <li><a href="#support-forms" onclick="openModal('volunteerModal')">자원봉사신청</a></li>
+                            <li><a href="#support-forms" onclick="openModal('fieldworkModal')">실습신청</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- MOBILE TOGGLE BUTTON -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main>
+        <!-- HERO BANNER SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-heart-pulse"></i> 마음을 나누고 회복을 더하는 따뜻한 동행
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        지역과 가정의 더 나은 <span class="highlight-word">삶</span>
+                        <span class="hero-sub-en">A Better Life With Happy Empathy</span>
+                    </h1>
+
+                    <!-- BIBLE VERSE CARD (요한삼서 2절) -->
+                    <div class="bible-card">
+                        <div class="bible-quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="bible-verse-text">
+                            “사랑하는 자여,<br>
+                            네 영혼이 잘됨 같이 네가 범사에 잘되고 강건하기를 내가 간구하노라”
+                        </p>
+                        <div class="bible-source">- 요한삼서 1장 2절 -</div>
+                    </div>
+
+                    <p class="hero-desc">
+                        사단법인 행복한공감과 부설 서울산 성·가정상담소는<br class="hide-pc">
+                        하나님 사랑과 이웃 사랑을 실천하며 모든 이웃의 존엄과 회복을 함께합니다.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="openModal('counselModal')">
+                            <i class="fa-solid fa-comments"></i> 비공개 상담신청
+                        </button>
+                        <a href="#support" class="btn btn-secondary">
+                            <i class="fa-solid fa-hand-holding-heart"></i> 따뜻한 후원안내
+                        </a>
+                        <a href="#about" class="btn btn-ghost" onclick="switchAboutTab('greeting')">
+                            기관소개 둘러보기 <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2-COLUMN PORTAL CORE: BOARD & 4 QUICK CARDS (밝은미래복지재단 구조) -->
+        <section class="portal-core-section" id="news">
+            <div class="container">
+                <div class="portal-grid">
+                    
+                    <!-- LEFT COLUMN: NOTICE & PRESS TABS -->
+                    <div class="portal-left-card">
+                        <div class="board-tabs-header">
+                            <div class="board-tab-buttons">
+                                <button class="board-tab-btn active" id="tabNoticeBtn" onclick="switchBoardTab('notice')">
+                                    <i class="fa-solid fa-bullhorn"></i> 공지사항
+                                </button>
+                                <button class="board-tab-btn" id="tabPressBtn" onclick="switchBoardTab('press')">
+                                    <i class="fa-solid fa-newspaper"></i> 보도자료 및 소식
+                                </button>
+                            </div>
+                            <a href="https://blog.naver.com/happy_empathy" target="_blank" class="board-more-link" title="더보기">
+                                더보기 <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+
+                        <!-- TAB CONTENT: 공지사항 -->
+                        <div class="board-tab-content active" id="boardNoticeContent">
+                            <ul class="board-list">
+                                <li class="board-item">
+                                    <span class="badge badge-primary">안내</span>
+                                    <a href="javascript:void(0)" onclick="openNoticeModal('2026 사랑의 교실 선도사업 개시 안내', '울산지방경찰청 선도사업 사랑의 교실 운영기관으로 선정되어 전문적인 선도 교육 및 심리상담을 개시합니다. 지역 청소년들의 건강한 성장을 위해 헌신하겠습니다.', '2026.05.01')" class="board-title">
+                                        울산지방경찰청 선도사업 사랑의 교실 사업 선정 및 운영 안내
+                                    </a>
+                                    <span class="board-date">2026.05.01</span>
+                                </li>
+                                <li class="board-item">
+                                    <span class="badge badge-accent">개소</span>
+                                    <a href="javascript:void(0)" onclick="openNoticeModal('서울산 성·가정상담소 개소 안내', '사단법인 행복한공감 부설 서울산 성·가정상담소가 울산 울주군에 새롭게 문을 열었습니다. 전문적인 상담과 권익 옹호에 앞장서겠습니다.', '2026.04.03')" class="board-title">
+                                        사)행복한공감부설 서울산 성·가정상담소 개소 안내
+                                    </a>
+                                    <span class="board-date">2026.04.03</span>
+                                </li>
+                                <li class="board-item">
+                                    <span class="badge badge-subtle">지정</span>
+                                    <a href="javascript:void(0)" onclick="openNoticeModal('학교폭력 특별교육 및 심리치료 기관 지정', '경남교육청 학교폭력 가해자 특별교육 및 심리치료 기관으로 연속 지정되었습니다.', '2025.03.01')" class="board-title">
+                                        경남교육청 학교폭력 가해자 특별교육·심리치료 기관 지정 공고
+                                    </a>
+                                    <span class="board-date">2025.03.01</span>
+                                </li>
+                                <li class="board-item">
+                                    <span class="badge badge-subtle">선정</span>
+                                    <a href="javascript:void(0)" onclick="openNoticeModal('2025년 양성평등 사업 선정', '2025년 양성평등기금 지원사업에 선정되어 건강한 가족문화 조성과 인권보호 활동을 전개합니다.', '2025.03.01')" class="board-title">
+                                        2025년도 양성평등 지원사업 선정 및 프로그램 운영 안내
+                                    </a>
+                                    <span class="board-date">2025.03.01</span>
+                                </li>
+                                <li class="board-item">
+                                    <span class="badge badge-subtle">실습</span>
+                                    <a href="javascript:void(0)" onclick="openModal('fieldworkModal')" class="board-title">
+                                        사회복지 현장실습 교육생 정기 모집 안내 (한국사회복지사협회 선정)
+                                    </a>
+                                    <span class="board-date">2024.04.29</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- TAB CONTENT: 보도자료 -->
+                        <div class="board-tab-content" id="boardPressContent">
+                            <ul class="board-list">
+                                <li class="board-item">
+                                    <span class="badge badge-press">보도</span>
+                                    <a href="https://blog.naver.com/happy_empathy" target="_blank" class="board-title">
+                                        [보도] 서울산 성·가정상담소, 울주군 지역사회 안전망 구축을 위한 발걸음
+                                    </a>
+                                    <span class="board-date">2026.04.10</span>
+                                </li>
+                                <li class="board-item">
+                                    <span class="badge badge-press">보도</span>
+                                    <a href="https://blog.naver.com/happy_empathy" target="_blank" class="board-title">
+                                        [소식] 사단법인 행복한공감 제3대 박영화 이사장 취임 및 새 출발
+                                    </a>
+                                    <span class="board-date">2025.10.30</span>
+                                </li>
+                                <li class="board-item">
+                                    <span class="badge badge-press">보도</span>
+                                    <a href="https://blog.naver.com/happy_empathy" target="_blank" class="board-title">
+                                        [소식] 경남공동모금회 사랑나눔 공모사업 선정 및 지원 활동 보고
+                                    </a>
+                                    <span class="board-date">2024.01.18</span>
+                                </li>
+                                <li class="board-item">
+                                    <span class="badge badge-press">보도</span>
+                                    <a href="https://blog.naver.com/happy_empathy" target="_blank" class="board-title">
+                                        [활동] 웅상종합사회복지관 업무협약 체결 – 지역 밀착형 복지상담 강화
+                                    </a>
+                                    <span class="board-date">2024.01.24</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN: 4 QUICK CARDS (스케치 반영: 후원안내 / 자원봉사안내 / 사회복지현장실습안내 / 상담안내) -->
+                    <div class="portal-right-cards">
+                        <div class="quick-cards-grid">
+                            
+                            <!-- 1. 후원안내 CARD -->
+                            <div class="quick-card card-bg-sponsor" onclick="scrollToElement('support')">
+                                <div class="card-overlay"></div>
+                                <div class="card-text-wrap">
+                                    <span class="card-tag"><i class="fa-solid fa-heart"></i> 사랑나눔</span>
+                                    <h3 class="card-heading">후원안내</h3>
+                                    <p class="card-subtext">작은 정성이 모여 큰 희망이 됩니다</p>
+                                </div>
+                                <div class="card-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+
+                            <!-- 2. 자원봉사안내 CARD -->
+                            <div class="quick-card card-bg-volunteer" onclick="openModal('volunteerModal')">
+                                <div class="card-overlay"></div>
+                                <div class="card-text-wrap">
+                                    <span class="card-tag"><i class="fa-solid fa-handshake-angle"></i> 따뜻한 손길</span>
+                                    <h3 class="card-heading">자원봉사안내</h3>
+                                    <p class="card-subtext">지역사회에 사랑과 온기를 전해주세요</p>
+                                </div>
+                                <div class="card-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+
+                            <!-- 3. 사회복지현장실습안내 CARD (스케치 오시는길 대체) -->
+                            <div class="quick-card card-bg-fieldwork" onclick="openModal('fieldworkModal')">
+                                <div class="card-overlay"></div>
+                                <div class="card-text-wrap">
+                                    <span class="card-tag"><i class="fa-solid fa-graduation-cap"></i> 전문인 양성</span>
+                                    <h3 class="card-heading">사회복지 현장실습</h3>
+                                    <p class="card-subtext">한국사회복지사협회 선정 실습기관</p>
+                                </div>
+                                <div class="card-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+
+                            <!-- 4. 상담안내 CARD (스케치 소식지 대체) -->
+                            <div class="quick-card card-bg-counseling" onclick="openModal('counselModal')">
+                                <div class="card-overlay"></div>
+                                <div class="card-text-wrap">
+                                    <span class="card-tag"><i class="fa-solid fa-user-shield"></i> 비밀보장</span>
+                                    <h3 class="card-heading">상담안내</h3>
+                                    <p class="card-subtext">성폭력·가정폭력·부부·개인 심리상담</p>
+                                </div>
+                                <div class="card-arrow-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: 기관소개 (ABOUT) -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-title-wrap text-center">
+                    <span class="section-subtitle">ABOUT HAPPY EMPATHY</span>
+                    <h2 class="section-title">기관소개</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- ABOUT NAVIGATION TABS -->
+                <div class="about-nav-tabs">
+                    <button class="about-tab-btn active" onclick="switchAboutTab('greeting')" id="aboutTab-greeting">
+                        <i class="fa-solid fa-hand-holding-heart"></i> 인사말
+                    </button>
+                    <button class="about-tab-btn" onclick="switchAboutTab('mission')" id="aboutTab-mission">
+                        <i class="fa-solid fa-compass"></i> 미션과 비전
+                    </button>
+                    <button class="about-tab-btn" onclick="switchAboutTab('history')" id="aboutTab-history">
+                        <i class="fa-solid fa-timeline"></i> 주요연혁
+                    </button>
+                    <button class="about-tab-btn" onclick="switchAboutTab('org')" id="aboutTab-org">
+                        <i class="fa-solid fa-sitemap"></i> 조직도
+                    </button>
+                    <button class="about-tab-btn" onclick="switchAboutTab('staff')" id="aboutTab-staff">
+                        <i class="fa-solid fa-id-badge"></i> 임직원 소개
+                    </button>
+                    <button class="about-tab-btn" onclick="switchAboutTab('location')" id="aboutTab-location">
+                        <i class="fa-solid fa-map-location-dot"></i> 오시는 길
+                    </button>
+                </div>
+
+                <!-- 1. TAB PANE: 인사말 -->
+                <div class="about-pane active" id="pane-greeting">
+                    <div class="greeting-box">
+                        <div class="greeting-header">
+                            <span class="greeting-badge">이사장 인사말</span>
+                            <h3 class="greeting-title">“타인의 아픔과 기쁨을 함께 나누며, 실질적인 회복의 길로 동행하겠습니다.”</h3>
+                        </div>
+                        <div class="greeting-body">
+                            <p>안녕하십니까.<br>
+                            사단법인 행복한공감을 찾아주시는 모든 분들께 진심으로 감사드립니다.</p>
+
+                            <p>사단법인 행복한공감은 <strong>하나님사랑과 이웃사랑의 기독교 정신을 바탕</strong>으로, 
+                            지역사회 구성원 모두가 존중받고 회복되는 삶을 살아갈 수 있도록 돕는 것을 사명으로 하고 있습니다.</p>
+
+                            <p>우리는 특히 어려움을 겪는 여성, 아동·청소년, 장애인 등 취약계층 이웃이 소외되지 않고 자신의 가능성을 발견하며 건강한 관계 속에서 성장할 수 있도록 다양한 상담·교육·복지 서비스를 제공하고자 합니다.</p>
+
+                            <p><strong>‘행복한공감’이라는 이름은 타인의 아픔과 기쁨을 함께 나누는 마음에서 출발합니다.</strong><br>
+                            우리는 공감을 단순한 위로에 머무르게 하지 않고, 실질적인 도움과 회복의 길로 이어지도록 노력합니다. 
+                            하나님께서 주신 사랑을 실천하며 이웃의 필요에 응답하고, 누구나 존엄하게 살아갈 수 있는 따뜻한 공동체를 만드는 것이 저희의 소망입니다.</p>
+
+                            <p>앞으로도 사단법인 행복한공감은 전문성과 신뢰를 바탕으로 지역사회와 함께하며, 희망이 필요한 이웃에게 위로와 용기, 사랑을 전하는 기관이 되겠습니다.<br>
+                            많은 관심과 동참 부탁드립니다. 감사합니다.</p>
+                        </div>
+                        <div class="greeting-sign">
+                            <span class="sign-org">사단법인 행복한공감 이사장</span>
+                            <span class="sign-name">박 영 화</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. TAB PANE: 미션과 비전, 핵심 가치 -->
+                <div class="about-pane" id="pane-mission">
+                    <div class="mission-vision-wrapper">
+                        
+                        <!-- MISSION CARD -->
+                        <div class="mv-card mission-card">
+                            <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <span class="mv-label">MISSION (사명)</span>
+                            <h3 class="mv-title">“사단법인 행복한공감은 하나님사랑과 이웃사랑의 기독교 정신을 바탕으로, 상담·교육·복지 서비스를 통해 이웃에게 하나님의 사랑을 전하기 위해 존재합니다”</h3>
+                        </div>
+
+                        <!-- VISION CARD -->
+                        <div class="mv-card vision-card">
+                            <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+                            <span class="mv-label">VISION (비전)</span>
+                            <h3 class="mv-title">“하나님의 사랑으로 모든 이웃이 존엄과 희망을 누리는 건강한 공동체”</h3>
+                        </div>
+
+                        <!-- CORE VALUES (5대 핵심 가치) -->
+                        <div class="core-values-box">
+                            <h4 class="core-values-heading"><i class="fa-solid fa-gem"></i> 5대 핵심 가치 (Core Values)</h4>
+                            <div class="values-grid">
+                                
+                                <div class="value-item">
+                                    <div class="value-badge">01</div>
+                                    <div class="value-icon"><i class="fa-solid fa-cross"></i></div>
+                                    <h5 class="value-title">하나님사랑</h5>
+                                    <p class="value-desc">하나님께서 주신 사랑을 삶과 봉사로 실천함</p>
+                                </div>
+
+                                <div class="value-item">
+                                    <div class="value-badge">02</div>
+                                    <div class="value-icon"><i class="fa-solid fa-people-roof"></i></div>
+                                    <h5 class="value-title">이웃사랑</h5>
+                                    <p class="value-desc">모든 이웃의 존엄을 존중하고 필요에 응답함</p>
+                                </div>
+
+                                <div class="value-item">
+                                    <div class="value-badge">03</div>
+                                    <div class="value-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                                    <h5 class="value-title">공감</h5>
+                                    <p class="value-desc">이웃의 아픔과 기쁨을 함께 나누며 진심으로 돌봄</p>
+                                </div>
+
+                                <div class="value-item">
+                                    <div class="value-badge">04</div>
+                                    <div class="value-icon"><i class="fa-solid fa-spa"></i></div>
+                                    <h5 class="value-title">회복</h5>
+                                    <p class="value-desc">상담과 교육을 통해 개인과 가족의 회복과 성장을 지원함</p>
+                                </div>
+
+                                <div class="value-item">
+                                    <div class="value-badge">05</div>
+                                    <div class="value-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+                                    <h5 class="value-title">연대</h5>
+                                    <p class="value-desc">지역사회와 협력하여 지속가능한 도움과 변화를 만듦</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 3. TAB PANE: 주요연혁 (TIMELINE) -->
+                <div class="about-pane" id="pane-history">
+                    <div class="history-container">
+                        <div class="timeline-intro text-center">
+                            <span class="tag-pill">HISTORY</span>
+                            <h3>사단법인 행복한공감이 걸어온 사랑과 나눔의 발자취</h3>
+                        </div>
+
+                        <div class="timeline">
+                            
+                            <!-- 2026년 -->
+                            <div class="timeline-group">
+                                <div class="timeline-year-badge">2026</div>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2026.05.01</div>
+                                        <div class="timeline-content">
+                                            <strong>울산지방경찰청 선도사업 사랑의 교실 사업 선정</strong>
+                                            <p>지역 청소년 선도 및 심리적 회복을 위한 경찰청 연계 선도 프로그램 기관 선정</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2026.04.03</div>
+                                        <div class="timeline-content">
+                                            <strong>사)행복한공감부설 서울산 성·가정상담소 개소</strong>
+                                            <p>성폭력 및 가정폭력 피해자 치유·상담 전문기관 신규 개소</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2025년 -->
+                            <div class="timeline-group">
+                                <div class="timeline-year-badge">2025</div>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2025.11.25</div>
+                                        <div class="timeline-content">
+                                            <strong>사)행복한공감부설 양산성·가정통합상담소 폐업 및 울산 통합 이전</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2025.10.30</div>
+                                        <div class="timeline-content">
+                                            <strong>제3대 이사장 취임 (박영화 이사장)</strong><br>
+                                            <strong>울산광역시 울주군으로 법인 사업소재지 이전 변경</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2025.03.01</div>
+                                        <div class="timeline-content">
+                                            <strong>경남교육청 학교폭력 가해자 특별교육·심리치료 기관 지정</strong><br>
+                                            <strong>2025년 양성평등 사업 선정</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2024년 -->
+                            <div class="timeline-group">
+                                <div class="timeline-year-badge">2024</div>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2024.03.01</div>
+                                        <div class="timeline-content">
+                                            <strong>2024년 양성평등 사업 선정</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2024.02.26</div>
+                                        <div class="timeline-content">
+                                            <strong>경남교육청 학교폭력 가해자 특별교육, 심리치료 기관 지정</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2024.01.24</div>
+                                        <div class="timeline-content">
+                                            <strong>웅상종합사회복지관 업무협약(MOU)</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2024.01.18</div>
+                                        <div class="timeline-content">
+                                            <strong>2024년 경남공동모금회 사랑나눔 공모사업 선정</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2023년 -->
+                            <div class="timeline-group">
+                                <div class="timeline-year-badge">2023</div>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2023.12.03</div>
+                                        <div class="timeline-content">
+                                            <strong>사)행복한공감부설 양산성·가정통합상담소 명칭 변경 (가정폭력·성폭력 통합상담소)</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2023.10.30</div>
+                                        <div class="timeline-content">
+                                            <strong>사)경상남도 장애인부모연대 양산시지회 업무협약</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2023.03.01</div>
+                                        <div class="timeline-content">
+                                            <strong>웅상노인복지관 찾아가는 상담 “어르신마음두드림” 운영</strong><br>
+                                            <strong>양성평등지원사업, 여성친화활성화사업, 우수동아리사업 선정</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2023.02.28</div>
+                                        <div class="timeline-content">
+                                            <strong>양산웅상노인복지관 업무협약</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2023.02.20</div>
+                                        <div class="timeline-content">
+                                            <strong>2023년 경남공동모금회 지정기탁 사랑나눔사업 선정</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2022년 -->
+                            <div class="timeline-group">
+                                <div class="timeline-year-badge">2022</div>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2022.09.07</div>
+                                        <div class="timeline-content">
+                                            <strong>평생학습동아리 양산스폰지, 해보미 운영</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2022.04.29</div>
+                                        <div class="timeline-content">
+                                            <strong>한국사회복지사협회 사회복지 현장실습기관 선정</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2022.02.28</div>
+                                        <div class="timeline-content">
+                                            <strong>양성평등지원사업, 여성친화활성화사업, 우수평생학습 선정</strong><br>
+                                            <strong>대구사이버대학교 업무협약(미술치료)</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2022.01.20</div>
+                                        <div class="timeline-content">
+                                            <strong>제2대 이사장 취임</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2021년 -->
+                            <div class="timeline-group">
+                                <div class="timeline-year-badge">2021</div>
+                                <div class="timeline-items">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2021.06.29</div>
+                                        <div class="timeline-content">
+                                            <strong>사단법인 등록 완료 및 본격 운영</strong>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2021.06.15</div>
+                                        <div class="timeline-content">
+                                            <strong>사단법인 행복한공감 설립</strong><br>
+                                            <strong>사)행복한공감 부설 경남가족상담센터(가정폭력상담소) 개소</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. TAB PANE: 조직도 (Image 4 반영) -->
+                <div class="about-pane" id="pane-org">
+                    <div class="org-container">
+                        <div class="org-title-box text-center">
+                            <h3>사단법인 행복한공감 조직 체계</h3>
+                            <p>투명하고 전문성 있는 복지 및 상담 서비스를 위한 조직 구성입니다.</p>
+                        </div>
+
+                        <!-- RESPONSIVE ORG TREE -->
+                        <div class="org-tree">
+                            
+                            <!-- LEVEL 1: 이사장 & 이사회 -->
+                            <div class="org-row org-level-1">
+                                <div class="org-node node-president">
+                                    <span class="node-sub">사단법인 행복한공감</span>
+                                    <span class="node-main">이사장</span>
+                                </div>
+                                <div class="org-connector-horizontal"></div>
+                                <div class="org-node node-board">
+                                    <span class="node-main">이사회</span>
+                                </div>
+                            </div>
+
+                            <div class="org-connector-vertical"></div>
+
+                            <!-- LEVEL 2: 법인사무국 -->
+                            <div class="org-row org-level-2">
+                                <div class="org-node node-office">
+                                    <span class="node-main">법인사무국</span>
+                                </div>
+                            </div>
+
+                            <div class="org-connector-vertical"></div>
+
+                            <!-- LEVEL 3: 상담소 & 운영위원회 -->
+                            <div class="org-row org-level-3">
+                                <div class="org-node node-center">
+                                    <span class="node-sub">부설 기관</span>
+                                    <span class="node-main">서울산 성·가정상담소</span>
+                                    <span class="node-extra">(울주군가정폭력·성폭력 통합상담소)</span>
+                                </div>
+                                <div class="org-connector-horizontal"></div>
+                                <div class="org-node node-committee">
+                                    <span class="node-main">운영위원회</span>
+                                </div>
+                            </div>
+
+                            <div class="org-connector-vertical-branch"></div>
+
+                            <!-- LEVEL 4: 3개 실무팀 -->
+                            <div class="org-row org-level-4">
+                                <div class="org-team-card team-support">
+                                    <div class="team-header-bar"></div>
+                                    <div class="team-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                                    <h4>운영지원팀</h4>
+                                    <ul>
+                                        <li>법인 회계 및 총무</li>
+                                        <li>자원봉사 및 후원 관리</li>
+                                        <li>시설 및 행정 지원</li>
+                                    </ul>
+                                </div>
+
+                                <div class="org-team-card team-counseling">
+                                    <div class="team-header-bar"></div>
+                                    <div class="team-icon"><i class="fa-solid fa-comments"></i></div>
+                                    <h4>상담팀</h4>
+                                    <ul>
+                                        <li>가정폭력·성폭력 피해 상담</li>
+                                        <li>부부 및 개인 심리치료</li>
+                                        <li>의료 및 법률 연계 지원</li>
+                                    </ul>
+                                </div>
+
+                                <div class="org-team-card team-edu">
+                                    <div class="team-header-bar"></div>
+                                    <div class="team-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                                    <h4>교육·홍보팀</h4>
+                                    <ul>
+                                        <li>사랑의 교실 선도사업</li>
+                                        <li>학교폭력 가해자 특별교육</li>
+                                        <li>폭력예방 및 시민교육</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. TAB PANE: 임직원 소개 (명함 정보 반영) -->
+                <div class="about-pane" id="pane-staff">
+                    <div class="staff-wrapper">
+                        <div class="staff-intro text-center">
+                            <h3>전문성과 헌신으로 함께하는 주요 임원진</h3>
+                            <p>상담 및 사회복지 현장에서 오랜 기간 헌신해 온 전문가들이 함께합니다.</p>
+                        </div>
+
+                        <div class="staff-grid">
+                            
+                            <!-- 박영화 이사장/소장 -->
+                            <div class="staff-card">
+                                <div class="staff-badge">사단법인 이사장 / 부설 상담소장</div>
+                                <div class="staff-header">
+                                    <div class="staff-avatar">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                    </div>
+                                    <div class="staff-name-title">
+                                        <h3>박 영화 <span class="role">이사장 · 소장</span></h3>
+                                        <p class="staff-affiliation">사단법인 행복한공감 / 부설 서울산 성·가정상담소</p>
+                                    </div>
+                                </div>
+                                <div class="staff-divider"></div>
+                                <div class="staff-career">
+                                    <h4><i class="fa-solid fa-award"></i> 주요 약력</h4>
+                                    <ul class="career-list">
+                                        <li>울산장애인성폭력상담센터 사무국장(前)</li>
+                                        <li>성폭력피해자보호시설 징검다리 시설장(前)</li>
+                                        <li>여성긴급전화1366 울산센터장(前)</li>
+                                        <li>울산광역시장애인권익옹호기관 팀장(前)</li>
+                                        <li>윤슬 발달장애인주간활동제공기관 · 최중증발달장애인 통합돌봄센터 센터장(前)</li>
+                                    </ul>
+                                </div>
+                                <div class="staff-contact">
+                                    <div><i class="fa-solid fa-phone"></i> 052-248-1366 / 052-242-1366</div>
+                                    <div><i class="fa-solid fa-mobile-screen"></i> 010-4012-1366</div>
+                                    <div><i class="fa-regular fa-envelope"></i> 7001366@naver.com</div>
+                                </div>
+                            </div>
+
+                            <!-- 김정희 사무국장/부소장 -->
+                            <div class="staff-card">
+                                <div class="staff-badge">사단법인 사무국장 / 부설 부소장</div>
+                                <div class="staff-header">
+                                    <div class="staff-avatar">
+                                        <i class="fa-solid fa-user-shield"></i>
+                                    </div>
+                                    <div class="staff-name-title">
+                                        <h3>김 정 희 <span class="role">사무국장 · 부소장</span></h3>
+                                        <p class="staff-affiliation">사단법인 행복한공감 / 부설 서울산 성·가정상담소</p>
+                                    </div>
+                                </div>
+                                <div class="staff-divider"></div>
+                                <div class="staff-career">
+                                    <h4><i class="fa-solid fa-award"></i> 주요 약력</h4>
+                                    <ul class="career-list">
+                                        <li>여성긴급전화1366 부산센터 팀장(前)</li>
+                                        <li>양산성가정통합상담소 소장(前)</li>
+                                        <li>부산교육청 성인권 시민조사관(前)</li>
+                                        <li>양산청소년복지센터(1388) 상담지도자(前)</li>
+                                    </ul>
+                                </div>
+                                <div class="staff-contact">
+                                    <div><i class="fa-solid fa-phone"></i> 052-248-1366 / 052-242-1366</div>
+                                    <div><i class="fa-solid fa-mobile-screen"></i> 010-2063-0012</div>
+                                    <div><i class="fa-regular fa-envelope"></i> 7001366@naver.com</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. TAB PANE: 오시는 길 -->
+                <div class="about-pane" id="pane-location">
+                    <div class="location-wrapper">
+                        <div class="location-grid">
+                            <div class="location-info-card">
+                                <h3><i class="fa-solid fa-location-dot"></i> 서울산 성·가정상담소 오시는 길</h3>
+                                <p class="loc-address"><strong>주소:</strong> 울산광역시 울주군 범서읍 대리3길 19-3, 3층</p>
+                                
+                                <ul class="loc-details">
+                                    <li><i class="fa-solid fa-phone"></i> <strong>전화:</strong> 052-248-1366, 052-242-1366</li>
+                                    <li><i class="fa-solid fa-mobile-screen"></i> <strong>휴대폰:</strong> 010-4012-1366 / 010-2063-0012</li>
+                                    <li><i class="fa-solid fa-clock"></i> <strong>이용 시간:</strong> 평일 09:00 ~ 18:00 (사전예약 상담 가능)</li>
+                                    <li><i class="fa-regular fa-envelope"></i> <strong>이메일:</strong> 7001366@naver.com</li>
+                                </ul>
+
+                                <div class="location-btn-group">
+                                    <a href="https://map.naver.com/v5/search/%EC%9A%B8%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EB%B2%94%EC%84%9C%EC%9D%8D%20%EB%8C%80%EB%A6%AC3%EA%B8%B8%2019-3" target="_blank" class="btn btn-naver-map">
+                                        <i class="fa-solid fa-map"></i> 네이버 지도로 보기
+                                    </a>
+                                    <a href="https://map.kakao.com/?q=%EC%9A%B8%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EB%B2%94%EC%84%9C%EC%9D%8D%20%EB%8C%80%EB%A6%AC3%EA%B8%B8%2019-3" target="_blank" class="btn btn-kakao-map">
+                                        <i class="fa-solid fa-location-crosshairs"></i> 카카오 맵으로 보기
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="location-map-visual">
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-building-circle-check"></i>
+                                    <h4>사단법인 행복한공감 부설 서울산 성·가정상담소</h4>
+                                    <p>울산 울주군 범서읍 구영리 인근 대리3길 19-3, 3층</p>
+                                    <span class="map-hint">대중교통 이용 시 울주군 범서읍 대리 정류장 인근 하차</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: 사업안내 (BUSINESS) -->
+        <section class="section business-section" id="business">
+            <div class="container">
+                <div class="section-title-wrap text-center">
+                    <span class="section-subtitle">SERVICES & PROGRAMS</span>
+                    <h2 class="section-title">주요 사업안내</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-intro-text">
+                        사단법인 행복한공감은 체계적인 상담, 전문 교육, 선도 프로그램을 통해 회복과 치유를 돕습니다.
+                    </p>
+                </div>
+
+                <div class="business-cards-grid">
+                    
+                    <!-- 1. 상담사업 -->
+                    <div class="biz-card" id="business-counseling">
+                        <div class="biz-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <h3>상담지원 사업</h3>
+                        <p class="biz-desc">폭력 피해자의 치유와 인권 보호, 가족 간 건강한 소통 회복을 위한 전문 상담을 지원합니다.</p>
+                        <ul class="biz-list">
+                            <li><i class="fa-solid fa-check"></i> <strong>성폭력·가정폭력 상담:</strong> 긴급 위기개입, 비밀 보장 상담</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>디지털 성범죄·교제폭력:</strong> 2차 피해 예방 및 심리치료</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>부부 및 개인상담:</strong> 대인관계 갈등, 정서적 안정 지원</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>연계 서비스:</strong> 의료, 법률기관 무료 연계 지원</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('counselModal')">상담 신청하기</button>
+                    </div>
+
+                    <!-- 2. 선도사업 (사랑의 교실) -->
+                    <div class="biz-card" id="business-leading">
+                        <div class="biz-badge">울산경찰청 지정</div>
+                        <div class="biz-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                        <h3>선도사업 「사랑의 교실」</h3>
+                        <p class="biz-desc">울산지방경찰청 지정 선도프로그램으로 위기 청소년의 재비행 방지와 자아존중감 향상을 돕습니다.</p>
+                        <ul class="biz-list">
+                            <li><i class="fa-solid fa-check"></i> 청소년 대상 1:1 심층 인성 및 정서 상담</li>
+                            <li><i class="fa-solid fa-check"></i> 법의식 및 또래 관계 개선 교육</li>
+                            <li><i class="fa-solid fa-check"></i> 부모-자녀 관계 회복 코칭</li>
+                            <li><i class="fa-solid fa-check"></i> 사회복귀 지원 및 사후 모니터링</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('counselModal')">프로그램 문의</button>
+                    </div>
+
+                    <!-- 3. 특별교육·심리치료 -->
+                    <div class="biz-card" id="business-education">
+                        <div class="biz-badge">경남교육청 지정</div>
+                        <div class="biz-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3>학교폭력 특별교육·심리치료</h3>
+                        <p class="biz-desc">경남교육청 학교폭력 가해학생 특별교육 및 심리치료 기관으로서 근본적인 행동 변화를 이끌어냅니다.</p>
+                        <ul class="biz-list">
+                            <li><i class="fa-solid fa-check"></i> 학교폭력 가해자 인식 전환 특별교육</li>
+                            <li><i class="fa-solid fa-check"></i> 분노조절 및 공감능력 향상 훈련</li>
+                            <li><i class="fa-solid fa-check"></i> 전문 심리상담 및 미술·치료 프로그램</li>
+                            <li><i class="fa-solid fa-check"></i> 학부모 동반 특별교육 프로그램</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('counselModal')">교육 안내 문의</button>
+                    </div>
+
+                    <!-- 4. 사회복지 현장실습 -->
+                    <div class="biz-card" id="business-fieldwork">
+                        <div class="biz-badge">한사협 선정</div>
+                        <div class="biz-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>사회복지 현장실습 교육</h3>
+                        <p class="biz-desc">한국사회복지사협회 인증 실습기관으로 현장 감각과 윤리의식을 갖춘 예비 사회복지사를 양성합니다.</p>
+                        <ul class="biz-list">
+                            <li><i class="fa-solid fa-check"></i> 사회복지 실습 지도자 1:1 멘토링</li>
+                            <li><i class="fa-solid fa-check"></i> 상담소 행정, 사례관리, 프로그램 기획</li>
+                            <li><i class="fa-solid fa-check"></i> 대구사이버대학교 등 학술 MOU 연계</li>
+                            <li><i class="fa-solid fa-check"></i> 실습 수료증 발급 및 피드백</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('fieldworkModal')">실습 신청하기</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: 후원안내 (SUPPORT) -->
+        <section class="section support-section" id="support">
+            <div class="container">
+                <div class="support-box">
+                    <div class="support-intro text-center">
+                        <span class="support-sub">SPONSORSHIP & DONATION</span>
+                        <h2>당신의 따뜻한 후원이 큰 힘이 됩니다</h2>
+                        <p>보내주시는 소중한 후원금은 위기 피해자 긴급지원, 심리상담 치료, 취약계층 회복 복지사업에 투명하게 사용됩니다.</p>
+                    </div>
+
+                    <div class="bank-card-container">
+                        <div class="bank-card">
+                            <div class="bank-card-top">
+                                <span class="bank-name"><i class="fa-solid fa-building-columns"></i> 농협은행</span>
+                                <span class="bank-badge">공식 후원계좌</span>
+                            </div>
+                            <div class="bank-number" id="accountText">301-0383-7865-51</div>
+                            <div class="account-name">예금주: 사)행복한공감부설 서울산성·가정상담소</div>
+                            <div class="bank-card-bottom">
+                                <button class="btn-copy-lg" onclick="copyAccount('301-0383-7865-51')">
+                                    <i class="fa-regular fa-copy"></i> 계좌번호 복사하기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-methods-grid">
+                        <div class="method-card">
+                            <div class="method-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+                            <h4>정기 후원</h4>
+                            <p>매월 정기적인 나눔으로 위기 가정의 든든한 울타리가 되어주세요.</p>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon"><i class="fa-solid fa-gift"></i></div>
+                            <h4>일시 후원</h4>
+                            <p>생일, 기념일 등 특별한 날 뜻깊은 사랑을 전해주세요.</p>
+                        </div>
+                        <div class="method-card">
+                            <div class="method-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+                            <h4>물품 후원</h4>
+                            <p>상담 대상자에게 필요한 생필품 및 교육 물품을 후원받습니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="support-inquiry text-center">
+                        <p><i class="fa-solid fa-circle-info"></i> 기부금 영수증 발급 및 후원 관련 문의는 대표전화(<strong>052-248-1366</strong>)로 연락주시면 친절히 안내해 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logos">
+                        <img src="images/logo1.png" alt="행복한공감 로고" class="footer-logo">
+                        <img src="images/logo2.png" alt="상담소 로고" class="footer-logo">
+                    </div>
+                    <h3>사단법인 행복한공감</h3>
+                    <p class="footer-sub-title">부설 서울산 성·가정상담소</p>
+                    <p class="footer-motto">“하나님의 사랑으로 모든 이웃이 존엄과 희망을 누리는 건강한 공동체”</p>
+                </div>
+
+                <div class="footer-info">
+                    <h4>기관 정보</h4>
+                    <ul class="footer-info-list">
+                        <li><strong>이사장 / 소장:</strong> 박영화</li>
+                        <li><strong>사무국장 / 부소장:</strong> 김정희</li>
+                        <li><strong>주소:</strong> 울산광역시 울주군 범서읍 대리3길 19-3, 3층</li>
+                        <li><strong>대표전화:</strong> 052-248-1366 | 052-242-1366</li>
+                        <li><strong>긴급/직통:</strong> 010-4012-1366 | 010-2063-0012</li>
+                        <li><strong>이메일:</strong> 7001366@naver.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-bank">
+                    <h4>후원 계좌 안내</h4>
+                    <div class="footer-bank-box">
+                        <span class="f-bank-title">농협은행</span>
+                        <div class="f-bank-acc">301-0383-7865-51</div>
+                        <span class="f-bank-holder">사)행복한공감부설 서울산성·가정상담소</span>
+                    </div>
+                    <p class="f-support-msg">여러분의 후원으로 한 사람의 영혼과 가정이 치유됩니다.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 사단법인 행복한공감 & 부설 서울산 성·가정상담소. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#about-greeting" onclick="switchAboutTab('greeting')">인사말</a>
+                    <a href="#about-history" onclick="switchAboutTab('history')">주요연혁</a>
+                    <a href="#about-org" onclick="switchAboutTab('org')">조직도</a>
+                    <a href="#support">후원안내</a>
+                    <a href="https://blog.naver.com/happy_empathy" target="_blank">공식블로그</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL: 비공개 상담신청 -->
+    <div class="modal-backdrop" id="counselModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('counselModal')">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-user-shield modal-icon"></i>
+                <h3>비공개 상담 신청</h3>
+                <p>상담 내용은 철저하게 비밀이 보장됩니다. 편안하게 남겨주시면 전문가가 신속히 연락드립니다.</p>
+            </div>
+            <form onsubmit="handleFormSubmit(event, '상담 신청')">
+                <div class="form-group">
+                    <label>성함 또는 가명 *</label>
+                    <input type="text" placeholder="예: 김희망" required>
+                </div>
+                <div class="form-group">
+                    <label>연락처 (전화 또는 휴대전화) *</label>
+                    <input type="tel" placeholder="예: 010-1234-5678" required>
+                </div>
+                <div class="form-group">
+                    <label>상담 분야 *</label>
+                    <select required>
+                        <option value="">분야를 선택해주세요</option>
+                        <option value="성폭력 상담">성폭력 피해 상담</option>
+                        <option value="가정폭력 상담">가정폭력 피해 상담</option>
+                        <option value="교제폭력 및 데이트폭력">교제폭력 / 디지털성범죄</option>
+                        <option value="부부 및 가족 갈등">부부 및 가족 갈등 상담</option>
+                        <option value="개인 심리상담">개인 심리치료 및 우울/불안</option>
+                        <option value="선도사업/사랑의교실 문의">사랑의 교실 / 특별교육 문의</option>
+                        <option value="기타">기타 상담</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>상담 희망 내용 또는 통화 편한 시간</label>
+                    <textarea rows="4" placeholder="상담받고 싶으신 내용이나 연락받기 편하신 시간을 간략히 적어주세요."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-block">비공개 상담 신청하기</button>
+                </div>
+                <div class="urgent-call-box text-center">
+                    긴급 전화상담: <a href="tel:052-248-1366">052-248-1366</a> / <a href="tel:010-4012-1366">010-4012-1366</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL: 자원봉사 신청 -->
+    <div class="modal-backdrop" id="volunteerModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('volunteerModal')">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-handshake-angle modal-icon"></i>
+                <h3>자원봉사 신청</h3>
+                <p>따뜻한 사랑으로 이웃과 동행해주실 자원봉사자님을 환영합니다.</p>
+            </div>
+            <form onsubmit="handleFormSubmit(event, '자원봉사 신청')">
+                <div class="form-group">
+                    <label>성명 *</label>
+                    <input type="text" placeholder="성명을 입력하세요" required>
+                </div>
+                <div class="form-group">
+                    <label>연락처 *</label>
+                    <input type="tel" placeholder="010-0000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label>희망 봉사 분야</label>
+                    <select>
+                        <option value="행사 및 캠페인 지원">행사 및 권익 캠페인 지원</option>
+                        <option value="행정 및 프로그램 보조">행정 사무 및 프로그램 보조</option>
+                        <option value="재능기부">전문 재능기부 (법률, 의료, 상담 등)</option>
+                        <option value="기타">기타 활동</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>활동 가능 요일 및 시간</label>
+                    <input type="text" placeholder="예: 평일 오전, 화/목 오후 등">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-block">자원봉사 신청서 제출</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL: 사회복지 현장실습 신청 -->
+    <div class="modal-backdrop" id="fieldworkModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('fieldworkModal')">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-graduation-cap modal-icon"></i>
+                <h3>사회복지 현장실습 신청 및 문의</h3>
+                <p>한국사회복지사협회 선정 실습기관에서 실천 현장의 전문성을 키우세요.</p>
+            </div>
+            <form onsubmit="handleFormSubmit(event, '현장실습 신청')">
+                <div class="form-group">
+                    <label>성명 *</label>
+                    <input type="text" placeholder="성명을 입력하세요" required>
+                </div>
+                <div class="form-group">
+                    <label>소속 대학 / 교육원 *</label>
+                    <input type="text" placeholder="예: 대구사이버대학교 사회복지학과" required>
+                </div>
+                <div class="form-group">
+                    <label>연락처 *</label>
+                    <input type="tel" placeholder="010-0000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label>희망 실습 시기</label>
+                    <input type="text" placeholder="예: 2026년 하반기 학기중 / 방학중">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-block">실습 문의 제출</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL: 공지사항 상세 모달 -->
+    <div class="modal-backdrop" id="noticeDetailModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('noticeDetailModal')">&times;</button>
+            <div class="modal-header">
+                <span class="badge badge-primary" id="modalNoticeDate">2026.00.00</span>
+                <h3 id="modalNoticeTitle" style="margin-top:10px;">공지사항 제목</h3>
+            </div>
+            <div class="modal-body-text" id="modalNoticeContent" style="padding: 20px 0; line-height: 1.8; color: #475569;">
+                공지사항 내용이 표시됩니다.
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary btn-block" onclick="closeModal('noticeDetailModal')">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">계좌번호가 클립보드에 복사되었습니다!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
