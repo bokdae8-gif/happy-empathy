@@ -9,8 +9,20 @@ let currentBlogCard = 0;
 let blogTimer = null;
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Scroll Reveal Animation (IntersectionObserver)
+    // 1. Scroll Reveal Animation (IntersectionObserver + fallback for fast jumps)
     const revealEls = document.querySelectorAll('.reveal_section');
+    function revealInOrAboveViewport() {
+        const triggerBottom = window.innerHeight * 0.96;
+        revealEls.forEach((el) => {
+            if (!el.classList.contains('revealed')) {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= triggerBottom) {
+                    el.classList.add('revealed');
+                }
+            }
+        });
+    }
+
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -21,9 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             },
-            { threshold: 0.08 }
+            { threshold: 0.05 }
         );
         revealEls.forEach((el) => observer.observe(el));
+        window.addEventListener('scroll', revealInOrAboveViewport, { passive: true });
+        revealInOrAboveViewport();
     } else {
         revealEls.forEach((el) => el.classList.add('revealed'));
     }
